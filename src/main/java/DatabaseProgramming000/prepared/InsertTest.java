@@ -1,4 +1,4 @@
-package prepared;
+package DatabaseProgramming000.prepared;
 
 import java.sql.*;
 

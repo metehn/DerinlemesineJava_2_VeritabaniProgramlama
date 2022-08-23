@@ -1,4 +1,4 @@
-package jdbc;
+package DatabaseProgramming000.jdbc;
 
 import com.mysql.cj.protocol.Resultset;
 

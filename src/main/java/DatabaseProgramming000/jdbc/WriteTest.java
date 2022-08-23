@@ -1,4 +1,4 @@
-package jdbc;
+package DatabaseProgramming000.jdbc;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

@@ -1,8 +1,9 @@
-package prepared;
+package DatabaseProgramming000.prepared;
 
 import java.sql.*;
 
-public class FindTest {
+public class ListTest {
+
 
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
 
@@ -12,18 +13,14 @@ public class FindTest {
         String user = "root";
         String password = "root";
 
-        Connection connection = DriverManager.getConnection(url,user, password);
+        Connection connection = DriverManager.getConnection(url, user, password);
 
-        /*
-        sql injection'u önlemek için bu yöntemi kullan
-        */
-
-        String sql = "select * from Product where productId=?";
+        String sql = "select * from Product";
         PreparedStatement statement = connection.prepareStatement(sql);
-        statement.setLong(1, 3);
+
         ResultSet resultSet = statement.executeQuery();
 
-        if (resultSet.next()) { // if kullandık çünkü 1 değer dönecek
+        while (resultSet.next()) {
             long productId = resultSet.getLong(("productId"));
             String productName = resultSet.getString("productName");
             float salesPrice = resultSet.getFloat("salesPrice");
@@ -34,5 +31,6 @@ public class FindTest {
         connection.close();
 
     }
+
 
 }

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="17.0.4.1" class="java.beans.XMLDecoder">
+ <object class="DatabaseProgramming008.bean.Department" id="Department0">
+  <void property="departmentId">
+   <long>123</long>
+  </void>
+  <void property="departmentName">
+   <string>Muhasebe</string>
+  </void>
+  <void property="employeeList">
+   <object class="java.util.ArrayList">
+    <void method="add">
+     <object class="DatabaseProgramming008.bean.Employee">
+      <void property="department">
+       <object idref="Department0"/>
+      </void>
+      <void property="employeeId">
+       <long>332</long>
+      </void>
+      <void property="employeeName">
+       <string>Metehan Ersoy</string>
+      </void>
+      <void property="monthlySalary">
+       <double>15000.0</double>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="DatabaseProgramming008.bean.Employee">
+      <void property="department">
+       <object idref="Department0"/>
+      </void>
+      <void property="employeeId">
+       <long>421</long>
+      </void>
+      <void property="employeeName">
+       <string>Mustafa Kemal</string>
+      </void>
+      <void property="monthlySalary">
+       <double>25000.0</double>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="DatabaseProgramming008.bean.Employee">
+      <void property="department">
+       <object idref="Department0"/>
+      </void>
+      <void property="employeeId">
+       <long>213</long>
+      </void>
+      <void property="employeeName">
+       <string>Atilla Ersoy</string>
+      </void>
+      <void property="monthlySalary">
+       <double>12000.0</double>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>

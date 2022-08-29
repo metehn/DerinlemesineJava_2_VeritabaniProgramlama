@@ -1,4 +1,4 @@
-package DatabaseProgramming009.greeting;
+package DatabaseProgramming009.chat;
 
 import java.io.*;
 import java.net.Socket;

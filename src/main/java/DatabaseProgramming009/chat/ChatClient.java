@@ -35,9 +35,9 @@ public class ChatClient extends Thread {
         }
     }
 
-    public void send(String response){
+    public void send(String response) {
         try {
-            writer.write(response+"\r\n");
+            writer.write(response + "\r\n");
             writer.flush();
         } catch (Exception e) {
             e.printStackTrace();
@@ -52,12 +52,17 @@ public class ChatClient extends Thread {
 
         InputStreamReader isr = new InputStreamReader(System.in);
         BufferedReader reader = new BufferedReader(isr);
-
-        while(true){
+        System.out.println("Client başlatıldı");
+        while (true) {
 
             String message = reader.readLine();
-            client.send(message);
-            System.out.println("Sunucuya gönderildi "+message);
+            if (!message.equals("exit")) {
+
+                client.send(message);
+                //System.out.println("Sunucuya gönderildi " + message);
+            } else {
+                System.exit(0); //break; de yazabilirsin
+            }
         }
 
     }

@@ -18,6 +18,7 @@ public class ChatServer extends Thread {
         serverSocket = new ServerSocket(port);
     }
 
+
     @Override
     public void run() {
         System.out.println("Sunucu başlatıldı. Port: " + serverSocket.getLocalPort());
@@ -48,6 +49,10 @@ public class ChatServer extends Thread {
 
         }
 
+    }
+
+    public List<ChatHandler> getHandlerList() {
+        return handlerList;
     }
 
     public static void main(String[] args) throws IOException {

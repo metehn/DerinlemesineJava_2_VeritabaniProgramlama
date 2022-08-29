@@ -1,6 +1,5 @@
 package DatabaseProgramming009.chat;
 
-import lombok.AllArgsConstructor;
 
 import java.io.IOException;
 import java.net.ServerSocket;

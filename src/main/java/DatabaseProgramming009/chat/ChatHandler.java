@@ -20,7 +20,7 @@ public class ChatHandler extends Thread {
         OutputStream out = socket.getOutputStream();
         OutputStreamWriter osw = new OutputStreamWriter(out);
         writer = new BufferedWriter(osw);
-        //printstream
+        //printstream'e de bakabilirsin
 
     }
 

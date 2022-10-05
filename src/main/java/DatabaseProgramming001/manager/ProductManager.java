@@ -6,7 +6,9 @@ import DatabaseProgramming001.entity.Product;
 import java.sql.*;
 import java.util.ArrayList;
 
-public class ProductManager {
+public class
+
+ProductManager {
 
 
     public boolean insert( Product product) throws ClassNotFoundException, SQLException {
